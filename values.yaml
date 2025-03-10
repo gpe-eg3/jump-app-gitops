@@ -5,7 +5,7 @@ jump-app-cicd:
   namespacePre: mock-value-pre
   namespacePro: mock-value-pro
   namespaceGitOps: user05-gitops-argocd
-  functTestRepo: https://github.com/acidonper/jump-app-functional-tests.git
+  functTestRepo: https://github.com/nveces/jump-app-typescrypt-react.git
   functTestRepoBranch: master
   functTestMicro: front-javascript
   pipeTypes:
