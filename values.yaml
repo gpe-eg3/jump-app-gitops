@@ -1,6 +1,21 @@
 # Chart variables
 jump-app-cicd:
-  enabled: false
+  enabled: true
+  namespaceDev: user05-jump-app-dev
+  namespacePre: mock-value-pre
+  namespacePro: mock-value-pro
+  namespaceGitOps: user05-gitops-argocd
+  functTestRepo: https://github.com/acidonper/jump-app-functional-tests.git
+  functTestRepoBranch: master
+  functTestMicro: front-javascript
+  pipeTypes:
+    - nodejs
+    - golang
+    - python
+    - java
+  gitBranchPro: master
+  gitBranchDev: develop
+  sa: tekton-deployments-admin
 jump-app-argocd:
   enabled: false
 jump-app-micros:
@@ -10,7 +25,7 @@ jump-app-micros:
     namespace: istio-system
     mtls: true
   cicd:
-    namespace: user01-jump-app-cicd
+    namespace: user05-jump-app-cicd
   knative:
     enabled: false
 
