@@ -34,7 +34,11 @@ global:
   appsDomain: apps.cluster-4kh56.dynamic.redhatworkshops.io
   apps:
     front-javascript:
-      imagetag: develop
+      build: is
+      imagestream: nodejs:18-ubi8
+      imagestreamNamespace: openshift
+      versions:
+        - v1
       multiVersions:
         enabled: false
       replicas: 1
